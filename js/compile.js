@@ -167,7 +167,6 @@ var compileUtil = {
     _setVMVal: function(vm, exp, value) {
         var val = vm;
         exp = exp.split('.');
-        debugger
         exp.forEach(function(k, i) {
             // 非最后一个key，更新val的值
             if (i < exp.length - 1) {
