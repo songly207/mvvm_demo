@@ -58,7 +58,7 @@ Watcher.prototype = {
         if (/[^\w.$]/.test(exp)) return; 
 
         var exps = exp.split('.');
-
+        //  闭包
         return function(obj) {  //obj 为 vm 对象
             for (var i = 0, len = exps.length; i < len; i++) {
                 if (!obj) return;
